@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GridCell.h
 //  AwesomeGrid
 //
 //  Created by Sam Sharaf on 4/29/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface GridCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

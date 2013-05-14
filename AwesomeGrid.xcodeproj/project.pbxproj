@@ -18,12 +18,13 @@
 		CE2E4C78172F8A060020B888 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2E4C77172F8A060020B888 /* Default-568h@2x.png */; };
 		CE2E4C7B172F8A060020B888 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E4C79172F8A060020B888 /* MainStoryboard_iPhone.storyboard */; };
 		CE2E4C7E172F8A060020B888 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E4C7C172F8A060020B888 /* MainStoryboard_iPad.storyboard */; };
-		CE2E4C81172F8A060020B888 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2E4C80172F8A060020B888 /* ViewController.m */; };
 		CE2E4C89172F8A070020B888 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2E4C88172F8A070020B888 /* SenTestingKit.framework */; };
 		CE2E4C8A172F8A070020B888 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2E4C61172F8A060020B888 /* UIKit.framework */; };
 		CE2E4C8B172F8A070020B888 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2E4C63172F8A060020B888 /* Foundation.framework */; };
 		CE2E4C93172F8A070020B888 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE2E4C91172F8A070020B888 /* InfoPlist.strings */; };
 		CE2E4C96172F8A070020B888 /* AwesomeGridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2E4C95172F8A070020B888 /* AwesomeGridTests.m */; };
+		CE2E4CA1172F8AB70020B888 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2E4CA0172F8AB70020B888 /* GridViewController.m */; };
+		CE2E4CA4172F8B300020B888 /* GridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2E4CA3172F8B300020B888 /* GridCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +53,16 @@
 		CE2E4C77172F8A060020B888 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CE2E4C7A172F8A060020B888 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CE2E4C7D172F8A060020B888 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CE2E4C7F172F8A060020B888 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE2E4C80172F8A060020B888 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE2E4C87172F8A070020B888 /* AwesomeGridTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeGridTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E4C88172F8A070020B888 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CE2E4C90172F8A070020B888 /* AwesomeGridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeGridTests-Info.plist"; sourceTree = "<group>"; };
 		CE2E4C92172F8A070020B888 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE2E4C94172F8A070020B888 /* AwesomeGridTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeGridTests.h; sourceTree = "<group>"; };
 		CE2E4C95172F8A070020B888 /* AwesomeGridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeGridTests.m; sourceTree = "<group>"; };
+		CE2E4C9F172F8AB70020B888 /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridViewController.h; path = ../GridViewController.h; sourceTree = "<group>"; };
+		CE2E4CA0172F8AB70020B888 /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridViewController.m; path = ../GridViewController.m; sourceTree = "<group>"; };
+		CE2E4CA2172F8B300020B888 /* GridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridCell.h; sourceTree = "<group>"; };
+		CE2E4CA3172F8B300020B888 /* GridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +122,14 @@
 		CE2E4C67172F8A060020B888 /* AwesomeGrid */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E4C9F172F8AB70020B888 /* GridViewController.h */,
+				CE2E4CA0172F8AB70020B888 /* GridViewController.m */,
 				CE2E4C70172F8A060020B888 /* AppDelegate.h */,
 				CE2E4C71172F8A060020B888 /* AppDelegate.m */,
 				CE2E4C79172F8A060020B888 /* MainStoryboard_iPhone.storyboard */,
 				CE2E4C7C172F8A060020B888 /* MainStoryboard_iPad.storyboard */,
-				CE2E4C7F172F8A060020B888 /* ViewController.h */,
-				CE2E4C80172F8A060020B888 /* ViewController.m */,
+				CE2E4CA2172F8B300020B888 /* GridCell.h */,
+				CE2E4CA3172F8B300020B888 /* GridCell.m */,
 				CE2E4C68172F8A060020B888 /* Supporting Files */,
 			);
 			path = AwesomeGrid;
@@ -276,7 +281,8 @@
 			files = (
 				CE2E4C6E172F8A060020B888 /* main.m in Sources */,
 				CE2E4C72172F8A060020B888 /* AppDelegate.m in Sources */,
-				CE2E4C81172F8A060020B888 /* ViewController.m in Sources */,
+				CE2E4CA1172F8AB70020B888 /* GridViewController.m in Sources */,
+				CE2E4CA4172F8B300020B888 /* GridCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
